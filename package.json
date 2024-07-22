@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Convert a 3D model file into your Minecraft world!",
   "author": "Cbrra",
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "start": "node .",
