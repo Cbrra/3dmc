@@ -1,0 +1,25 @@
+{
+  "name": "3dmc",
+  "version": "0.1.0",
+  "description": "Convert a 3D model file into your Minecraft world!",
+  "author": "Cbrra",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "npm run build && node .",
+    "build": "rimraf ./dist && rimraf ./3dmc/data/3dmc/function/f && swc src -d dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbrra/3dmc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.10",
+    "rimraf": "^5.0.5",
+    "swc": "^1.0.11",
+    "typescript": "^5.5.3",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^8.56.0"
+  }
+}

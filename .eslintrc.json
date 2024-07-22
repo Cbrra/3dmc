@@ -1,0 +1,41 @@
+{
+    "ignorePatterns": ["/*", "!/src"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "project": ["./tsconfig.json"]
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "import/no-anonymous-default-export": "off",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "camelcase": "off",
+        "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+        "no-extra-semi": "error",
+        "max-statements-per-line": "error",
+        "prefer-const": "error",
+        "semi": ["error", "always"],
+        "semi-spacing": ["error", { "before": false, "after": true }],
+        "semi-style": ["error", "last"],
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "never"
+        }]
+    }
+}

@@ -1,0 +1,6 @@
+input.stl
+package-lock.json
+node_modules
+dist
+3dmc/data/3dmc/function/f/
+3dmc/data/3dmc/tick.mcfunction

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "test": "\\.(ts|js)$",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "dynamicImport": true
+    },
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "esnext"
+  },
+  "module": {
+    "type": "commonjs",
+    "strict": false,
+    "strictMode": true
+  },
+  "minify": false,
+  "exclude": [
+    "node_modules",
+    ".*\\.d\\.ts$"
+  ]
+}
